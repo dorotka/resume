@@ -1,0 +1,311 @@
+@import "less/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+
+/******************** Variables ********************/
+
+// Colors
+
+@color-blue: #079FDD;
+@color-green: #AAD258;
+@color-lightgreen: lighten(#AAD258, 15%);
+@color-orange: #FF9800;
+@color-salmon: #ED865C;
+@color-gray: #5D5D5D;
+@color-lightgray: lighten(#5D5D5D, 45%);
+@color-bluegray: #858599;
+@color-brown: #594E42;
+@color-lightbrown: #A5998B;
+
+
+@color-link-color: @color-blue;
+
+// Font sizes
+
+@font-size-base:          15px;
+/*@font-size-large:         ceil((@font-size-base * 1.25)); // ~19px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~13px*/
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+@grid-gutter-width:         40px;
+
+/* You can pick the variables from less/variables.less and override them here to customize the theme for our needs
+Also when you use less files (bootstrap.less and the less compailet .js) insted of css and js you need less files in your project.*/
+
+/******************** Mixins ********************/
+
+/* Layout */
+
+#intro, #contact, #objective, #summary, .skills, #experience, #education, #extra, #hobbies{
+	.make-row();
+}
+
+.address, .character, #main-creative, .other, .date-range{
+	.make-sm-column(4);
+}
+
+#main-technical{
+  .make-sm-column(8);
+}
+
+#sum-exp, .institution{
+  .make-sm-column(8);
+}
+
+.skill-list{
+  .make-sm-column(6);
+}
+
+.position, .graph, .explist{
+  .make-sm-column(12);
+}
+
+#objective, #experience, #education, #extra, #hobbies{
+  p{
+    .make-sm-column(12);
+  }
+}
+
+/* Styling */
+
+.link-color(@color){
+  color: @color;
+  &:hover, &:focus{ 
+   color: @color + #333;
+  }
+}
+
+
+
+/******************** Styles ********************/
+
+body{
+	//background-color: @color-lightgreen;
+  color: @color-gray;
+  font-family: 'Quicksand', sans-serif;
+  font-size: @font-size-base;
+
+}
+
+.container-fluid{
+  margin: 1.3em;
+}
+
+section{
+  margin: 30px 0;
+}
+
+h3{
+  // @color: lighten(@color-lightbrown, 10%);
+  @color: lighten(@color-bluegray, 10%);
+  text-transform: capitalize;
+  color: @color;
+  font-size: 2.5em;
+  small{
+    color: @color;
+  }
+}
+
+h4{
+  //font-weight: bold;
+  text-transform: capitalize;
+}
+
+a{
+  .link-color(@color-link-color);
+  text-decoration: none;
+  &:hover, &:focus{ 
+    text-decoration: none;
+  }
+}
+
+abbr{
+  color: @color-link-color;
+  font-weight: normal;
+}
+
+.popover-content{
+  font-weight: normal;
+}
+
+.date-range{
+  text-align: right;
+}
+.position{
+  font-size: ceil((@font-size-base * 1.3));
+  font-style: italic;
+  text-align: left;
+}
+
+.institution{
+  font-weight: bold;
+}
+
+.glyphicon{
+  padding: 0 .5em;
+  color: @color-lightgray;
+}
+
+.watermark{
+  position: absolute;
+  left: -50px;
+  top: -280px;
+  z-index: -200;
+  width: 100%;
+  font-size: ceil((@font-size-base * 30)); /* about 150px */
+  overflow: hidden;
+  color: lighten(@color-bluegray, 35%);
+  opacity: 0.5;
+   -moz-opacity: 0.5;
+ -webkit-opacity: 0.5;
+   -ms-opacity: 0.5;
+ }
+
+
+#name{
+  font-size: 9em;
+ margin-bottom: 150px;
+ @media screen and (max-width: 700px) {
+  font-size: 4em;
+  margin-bottom: 50px;
+ }
+}
+
+#objective{
+  dt{
+    //font-weight: bold;
+    font-size: 1.3em;
+  }
+  dd{
+    //font-weight: bold;
+    font-size: 2.5em;
+  }
+}
+
+#contact{
+  .glyphicon{
+    font-size: 1.5em;
+    top: .3em;
+  }
+
+}
+
+.explist{
+  line-height: 2em;
+  li{
+    color: @color-bluegray;
+    font-weight: bold;
+    font-size: @font-size-base *1.2;
+    ul li{
+     color: @text-color;
+     font-weight: normal;
+    font-size: @font-size-base;
+    }
+  }
+}
+
+#technical, #creative{
+  a{
+    cursor: default;
+  }
+}
+
+/* panel for the graph */
+
+.panel{
+  margin-top: 10px;
+  svg, .chartMainTech{
+    margin: 10px;
+  }
+}
+.panel-heading{
+  cursor: pointer;
+ .link-color(@color-link-color);
+}
+
+/******** Tooltip styling for svg skills-graph *******/
+.canvasjs-chart-container{
+  .canvasjs-chart-canvas{
+  }
+}
+
+.canvasjs-chart-tooltip{
+ /*&:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: @gray-lighter;
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }*/
+  div{
+    padding: 5px 15px;
+    border: none !important;
+    border-radius: 0px !important;
+    
+  }
+
+}
+.canvasjs-chart-credit{
+  display: none;
+}
+
+
+  .tipName{
+      font-family: 'Quicksand', sans-serif;
+      //font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+  .circle {
+    &:hover {
+    fill: @gray-lighter;
+    //font-weight: bold;
+    }
+  }
+
+  .label{
+    @graph-coursor: default;
+    cursor: @graph-coursor;
+    &:hover {
+    fill: #ccc;
+    cursor: @graph-coursor;
+    }
+  }
+
+
+  .d3-tip {
+    line-height: 1;
+    //font-weight: bold;
+    padding: 12px;
+    background: @gray-lighter;
+    color: #333;
+    border-radius: 2px;
+  }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: @gray-lighter;
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+
+  /* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+

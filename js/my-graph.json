@@ -1,0 +1,65 @@
+{
+ "name": "skills",
+ "children": [
+  {
+   "name": "technical",
+   "children": [
+    {
+     "name": "front-end",
+     "children": [
+      {"name": "Javascript", "size": 70},
+      {"name": "jQuery", "size": 80},
+      {"name": "jQuery UI", "size": 80},
+      {"name": "Bootstrap", "size": 90},
+      {"name": "LESS", "size": 50},
+      {"name": "SASS", "size": 90},
+      {"name": "HTML5", "size": 90},
+      {"name": "CSS3", "size": 90},
+      {"name": "D3.js", "size": 50},
+      {"name": "Angular.js", "size": 90},
+      {"name": "Backbone.js", "size": 25},
+      {"name": "AJAX", "size": 70},
+      {"name": "JSON", "size": 70},
+      {"name": "UX", "size": 80}
+     ]
+    },
+    {
+     "name": "back-end",
+     "children": [
+      {"name": "Java", "size": 80},
+      {"name": "Spring Framework", "size": 60},
+      {"name": "jUnit", "size": 60},
+      {"name": "jMock", "size": 30},
+      {"name": "SQL", "size": 50},
+      {"name": "Oracle DB", "size": 50},
+      {"name": "Apache Tomcat", "size": 40}
+     ]
+    },
+    {
+     "name": "other-technical",
+     "children": [
+      {"name": "Scrum Methodology", "size": 50},
+      {"name": "Unit Testing", "size": 60},
+      {"name": "CVS (Git and SNV)", "size": 50},
+      {"name": "Sublime Text 2 & 3", "size": 60},
+      {"name": "IBM WebSphere", "size": 40},
+      {"name": "IBM RAD", "size": 40}, 
+      {"name": "Maven", "size": 10},
+      {"name": "SDLC", "size": 60}
+     ]
+    }
+   ]
+  },
+
+  {
+   "name": "creative",
+   "children": [
+    {"name": "Photoshop", "size": 60},
+    {"name": "InDesign", "size": 80},
+    {"name": "Illustrator", "size": 50},
+    {"name": "Graphic Design", "size": 80},
+    {"name": "Photography", "size": 60}
+   ]
+  }
+ ]
+}
