@@ -25,15 +25,12 @@ function drawMainSkillsGraphs() {
                   type: "bar",
                   color: "#7b6888", 
                   dataPoints: [
-                  { label: "UX", y: 80 },
-                  { label: "AngulaJs", y: 90 },
-                  { label: "SASS", y: 90 },
-                  { label: "jQuery & jQuery UI", y: 80 },
-                  { label: "HTML5", y: 90 },
-                  { label: "CSS3", y: 90 },
-                  { label: "Bootstrap", y: 80 },
-                  { label: "LESS", y: 50 },
-                  { label: "AJAX", y: 70 }
+                  { label: "AngulaJs", y: 95 },
+                  { label: "Javascript", y: 95 },
+                  { label: "Java", y: 80 },
+                  { label: "Python", y: 75 },
+                  { label: "SQL", y: 70 },
+                  { label: "GIT", y: 70 }
                   ]
               }
              ]
