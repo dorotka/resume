@@ -27,8 +27,8 @@ function drawMainSkillsGraphs() {
                   dataPoints: [
                   { label: "AngulaJs", y: 95 },
                   { label: "Javascript", y: 95 },
-                  { label: "Java", y: 80 },
-                  { label: "Python", y: 75 },
+                  { label: "Java", y: 85 },
+                  { label: "Python", y: 80 },
                   { label: "SQL", y: 70 },
                   { label: "GIT", y: 70 }
                   ]
@@ -57,10 +57,10 @@ function drawMainSkillsGraphs() {
                   type: "bar",
                   color: "#7b6888", 
                   dataPoints: [
-                  { label: "InDesign", y: 80 },
-                  { label: "Photoshop", y: 60 },
-                  { label: "Graphic Design", y: 80 },
-                  { label: "Potography", y: 60 }
+                  { label: "Scrum", y: 80 },
+                  { label: "Architecture and Design", y: 80 },
+                  { label: "Data Visualization", y: 90 },
+                  { label: "Data Mining", y: 80 }
                   ]
               }
              ]
