@@ -7,58 +7,53 @@
     {
      "name": "front-end",
      "children": [
-      {"name": "Javascript", "size": 70},
+      {"name": "Javascript", "size": 95},
       {"name": "jQuery", "size": 80},
-      {"name": "jQuery UI", "size": 80},
       {"name": "Bootstrap", "size": 90},
-      {"name": "LESS", "size": 50},
-      {"name": "SASS", "size": 90},
-      {"name": "HTML5", "size": 90},
-      {"name": "CSS3", "size": 90},
-      {"name": "D3.js", "size": 50},
-      {"name": "Angular.js", "size": 90},
-      {"name": "Backbone.js", "size": 25},
-      {"name": "AJAX", "size": 70},
-      {"name": "JSON", "size": 70},
+      {"name": "HTML5", "size": 75},
+      {"name": "CSS3", "size": 80},
+      {"name": "D3.js", "size": 70},
+      {"name": "AngularJS", "size": 95},
+      {"name": "Grunt", "size": 90},
+      {"name": "AJAX", "size": 90},
       {"name": "UX", "size": 80}
      ]
     },
     {
      "name": "back-end",
      "children": [
-      {"name": "Java", "size": 80},
-      {"name": "Spring Framework", "size": 60},
-      {"name": "jUnit", "size": 60},
-      {"name": "jMock", "size": 30},
-      {"name": "SQL", "size": 50},
-      {"name": "Oracle DB", "size": 50},
-      {"name": "Apache Tomcat", "size": 40}
+      {"name": "Java", "size": 90},
+      {"name": "Python", "size": 85},
+      {"name": "PHP", "size": 75},
+      {"name": "Spring Framework", "size": 70},
+      {"name": "jUnit", "size": 80},
+      {"name": "jMock", "size": 70},
+      {"name": "SQL", "size": 75},
+      {"name": "Oracle DB", "size": 70},
+      {"name": "MySql", "size": 70},
+      {"name": "Prolog", "size": 60}
      ]
     },
     {
      "name": "other-technical",
      "children": [
-      {"name": "Scrum Methodology", "size": 50},
-      {"name": "Unit Testing", "size": 60},
-      {"name": "CVS (Git and SNV)", "size": 50},
-      {"name": "Sublime Text 2 & 3", "size": 60},
-      {"name": "IBM WebSphere", "size": 40},
-      {"name": "IBM RAD", "size": 40}, 
-      {"name": "Maven", "size": 10},
-      {"name": "SDLC", "size": 60}
+      {"name": "Scrum", "size": 80},
+      {"name": "Unit Testing", "size": 90},
+      {"name": "SDLC", "size": 90},
+      {"name": "Data Vis", "size": 85},
+      {"name": "Data Mining", "size": 75},
+      {"name": "GIT", "size": 70}
      ]
     }
    ]
   },
-
   {
    "name": "creative",
    "children": [
     {"name": "Photoshop", "size": 60},
     {"name": "InDesign", "size": 80},
-    {"name": "Illustrator", "size": 50},
     {"name": "Graphic Design", "size": 80},
-    {"name": "Photography", "size": 60}
+    {"name": "Photography", "size": 70}
    ]
   }
  ]

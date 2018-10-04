@@ -13,6 +13,7 @@
 		<title>Résumé</title>
 
 		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="css/main.min.css" rel="stylesheet">
 		<!-- <link href="main.less" rel="stylesheet/less"> -->
 		
@@ -422,7 +423,7 @@ mind</li>
 
 			<section id="skills" class="skills">
 				<h3>All Skills</h3>
-				<div class="skill-list" id="technical">
+				<div class="skill-list d-none d-xs-block d-sm-none" id="technical">
 					<h4>technical</h4>
 					<ul class="list-unstyled bars">
 						<li><a href="">jQuery and jQuery UI</a><span class="glyphicon glyphicon-star"></span></li>
@@ -445,7 +446,7 @@ mind</li>
 						<li><a href="">UX</a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></li>
 					</ul>
 				</div>
-				<div class="skill-list" id="creative">
+				<div class="skill-list d-none d-xs-block d-sm-none" id="creative">
 					<h4>creative</h4>
 					<ul class="list-unstyled bars">
 						<li><a href="">Adobe InDesign</a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></li>
@@ -455,17 +456,20 @@ mind</li>
 						<li><a href="">Photography</a><span class="glyphicon glyphicon-star"></span></li>
 					</ul>
 				</div>
-				 <div class="panel-group graph accordion">
-				 <div class="panel-default panel">
-					 <div class="panel-heading"><h4 class="panel-title" data-toggle="collapse" data-parent=".accordion" href="#collapseOne">The skills graph</h4></div>
-					 
-					 	<div class="panel-collapse collapse in" id="collapseOne">
-							<span class="legend" id="skills-legend"></span>
-							<span id="skills-graph"></span>
+				<div class="d-none d-sm-block">
+					<div class="panel-group graph accordion">
+					 	<div class="panel-default panel">
+						 	<div class="panel-heading">
+						 		<h4 class="panel-title" data-toggle="collapse" data-parent=".accordion" href="#collapseOne">The skills graph</h4>
+						 	</div>
+						 
+						 	<div class="panel-collapse collapse in" id="collapseOne">
+								<span class="legend" id="skills-legend"></span>
+								<span id="skills-graph"></span>
+							</div>
 						</div>
-					</div>
-				 </div>
-				
+					 </div>
+				</div>
 			</section>
 
 			<summary id="hobbies" class="hidden">
@@ -485,14 +489,15 @@ mind</li>
 
 		</div> <!-- end of container -->
 		<!-- jQuery -->
-		<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<!--<script src="js/less-1.7.5.min.js"></script>-->
-		<script src="js/bootstrap/bootstrap.js"></script>
+		<!-- <script src="js/bootstrap/bootstrap.js"></script> -->
+		<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<!-- d3js and graphs -->
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
